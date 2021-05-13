@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Кошелек JS</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+            integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.min.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Кошелек</h1>
+            <h2>Калькулятор расходов</h2>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="total">
+                    <header class="total__header">
+                        <h3>Баланс</h3>
+                        <p class="total__balance"><span>0</span> &#8372;</p>
+                    </header>
+                    <div class="total__main">
+                        <div class="total__main-item total__income">
+                            <h4>Доходы</h4>
+                            <p class="total__money total__money-income">
+                                + <span>0</span> &#8372;
+                            </p>
+                        </div>
+                        <div class="total__main-item total__expenses">
+                            <h4>Расходы</h4>
+                            <p class="total__money total__money-expenses">
+                                 <span>0</span> &#8372;
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="history">
+                    <h3>История расходов</h3>
+                    <ul class="history__list">
+                        <!-- <li class="history__item history__item-plus">
+                            <span class="history__money"> 1000 &#8372;</span>
+                            <button class="history_delete">X</button>
+                        </li>
+                        <li class="history__item history__item-minus">
+                            <span class="history__money"> -500 &#8372;</span>
+                            <button class="history_delete">X</button>
+                        </li> -->
+                    </ul>
+                </section>
+
+                <section class="operation">
+                    <h3>Новая операция</h3>
+                    <form id="form">
+                        <label>
+                            <input
+                                type="text"
+                                class="operation__fields operation__name"
+                                placeholder="Наименование операции"
+                            />
+                        </label>
+                        <label>
+                            <input
+                                type="number"
+                                class="operation__fields operation__amount"
+                                placeholder="Введите сумму"
+                            />
+                        </label>
+                        <button type="submit" class="operation__add">
+                            Добавить операцию
+                        </button>
+                    </form>
+                </section>
+
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+        </main>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>

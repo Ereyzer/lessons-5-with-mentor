@@ -1,0 +1,42 @@
+.operation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--main-lightgray-color);
+    border-radius: 25px;
+    padding: 15px 15px;
+}
+
+.operation__fields {
+    display: block;
+    border: 1px solid var(--main-gray-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 100%;
+    outline: transparent;
+}
+
+.operation__fields:focus {
+    border: 1px solid var(--main-orange-color);
+}
+
+.operation__add {
+    background-color: var(--main-orange-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-orange-color);
+    color: var(--main-light-bg-color);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0;
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.operation__add:hover {
+    background-color: var(--main-light-bg-color);
+    color: var(--main-orange-color);
+}

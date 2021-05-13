@@ -1,0 +1,12 @@
+.total__money {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.total__money-expenses {
+    color: var(--invalid-color);
+}
+
+.total__money-income {
+    color: var(--valid-color);
+}
