@@ -37,17 +37,12 @@ function removeItems(event)  {
             
             
         }else{
-            console.log('durdom')
-            console.log(el);
-            console.log(acc);
-            // acc = [...acc, el];
             acc.push(el)
             
         }
         return  acc;
     },[])];
     localStorage.setItem('dataBase', JSON.stringify(dataBase))
-    console.log(dataBase)
 }
 // Слушаем сабмит
 
@@ -78,7 +73,6 @@ refs.form.addEventListener('submit', event => {
 });
 
 const renderOperation = operation => {
-    console.log(operation);
     const className =
         operation.amount < 0 ? 'history__item-minus' : 'history__item-plus';
 
